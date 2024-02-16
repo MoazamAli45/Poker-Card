@@ -404,6 +404,9 @@ body {
   .button:hover::before {
     scale: 8;
   }
+  .button__mobile:hover .icon__mobile {
+    color: black;
+  }
 }
 
 @media (max-width: 600px) {
