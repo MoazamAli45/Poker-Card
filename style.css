@@ -459,7 +459,7 @@ body {
     padding-inline: 20px;
   }
   .oval__cardContainer--3 {
-    gap: 0px;
+    gap: 5px;
   }
   .oval__cardGroup {
     gap: 3px;
