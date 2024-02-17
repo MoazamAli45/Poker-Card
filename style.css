@@ -584,10 +584,10 @@ body {
   font-size: 28px;
 }
 .spade {
-  color: black;
-  font-size: 50px;
-  justify-self: flex-start;
-  transform: translateY(-28px);
+  display: block;
+  width: 30px;
+  height: 33px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMC4xMTciIGhlaWdodD0iMzMuMjE5IiB2aWV3Qm94PSIwIDAgMzAuMTE3IDMzLjIxOSI+CiAgPHBhdGggaWQ9IlNQQURFIiBkPSJNOS4zMzgsMzMuMjE5di0zLjlIMjAuNzc5djMuOVptNi42MTQtOC43NTYtLjg5My0uODk1LS44OTMuODk1QTguMzM3LDguMzM3LDAsMCwxLDIuMTg3LDI0LjI4YTguNTcyLDguNTcyLDAsMCwxLC4zNzgtMTEuODNMMTQuOTUsMGwxMi42LDEyLjQ1YTguNTY5LDguNTY5LDAsMCwxLC4zNzgsMTEuODMsOC4yNzIsOC4yNzIsMCwwLDEtNS45NTEsMi42MjlxLS4xMjEsMC0uMjQyLDBBOC4xNDMsOC4xNDMsMCwwLDEsMTUuOTUxLDI0LjQ2NFoiIGZpbGw9IiMwNzA3MDciLz4KPC9zdmc+Cg==");
 }
 .poker__modalCard:hover {
   background-color: #e1e1e1;
@@ -602,23 +602,29 @@ body {
 }
 
 .heart {
-  color: #e71e26;
-  font-size: 35px;
-  justify-self: flex-start;
-  transform: translateY(-15px);
+  background-color: #e71e26;
+  display: block;
+  width: 32px;
+  height: 31px;
+  background-repeat: no-repeat;
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMi4yNTIiIGhlaWdodD0iMzEiIHZpZXdCb3g9IjAgMCAzMi4yNTIgMzEiPgogIDxwYXRoIGlkPSJIRUFSVCIgZD0iTTYyLjM5MywxMDYuNDYzYTEwLjEsMTAuMSwwLDAsMS0yLjY4Nyw2LjkyNmwtMTMuMzgsMTQuMjc5LS4wNTktLjA1OC0uMDU1LjA1OEwzMi44MjksMTEzLjM5YTEwLjI2OCwxMC4yNjgsMCwwLDEsMC0xMy44NTMsOC43NzksOC43NzksMCwwLDEsMTIuOTgsMGwuNDU4LjQ5My40NjItLjQ5M2E4Ljc3Miw4Ljc3MiwwLDAsMSwxMi45NzYsMCwxMC4xLDEwLjEsMCwwLDEsMi42ODcsNi45MjYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMC4xNDEgLTk2LjY2OCkiIGZpbGw9IiM5ODk4OTgiLz4KPC9zdmc+Cg==");
 }
 
-.club {
-  color: black;
-  font-size: 50px;
-  justify-self: flex-start;
-  transform: translateY(-28px);
-}
 .diamond {
-  color: #e71e26;
-  font-size: 50px;
-  justify-self: flex-start;
-  transform: translateY(-28px);
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOS44NDQiIGhlaWdodD0iMzMuMDg5IiB2aWV3Qm94PSIwIDAgMjkuODQ0IDMzLjA4OSI+CiAgPHBhdGggaWQ9IkRJQU1PTkQiIGQ9Ik02Mi42NzksMTEwLjE0MSw0Ny43NTcsMTI2LjY4NiwzMi44MzUsMTEwLjE0MSw0Ny43NTcsOTMuNloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMi44MzUgLTkzLjU5NykiIGZpbGw9IiM5ODk4OTgiLz4KPC9zdmc+Cg==");
+  background-color: #e71e26;
+  display: block;
+  width: 30px;
+  height: 33px;
+  background-repeat: no-repeat;
+}
+.club {
+  mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOS45NiIgaGVpZ2h0PSIzMy42NTUiIHZpZXdCb3g9IjAgMCAyOS45NiAzMy42NTUiPgogIDxwYXRoIGlkPSJDTFVCIiBkPSJNOC4wODYsMzIuNjU1VjI4Ljc1SDIwLjg3M3YzLjkwNVpNMTQuNDgsMjEuNkE3LjYyNyw3LjYyNywwLDEsMSw3LjI3NCwxMC42MzQsNy42MjQsNy42MjQsMCwxLDEsMjEuMywxMC42MjdoLjAzNUE3LjYzMyw3LjYzMywwLDEsMSwxNC40OCwyMS42WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC41IDAuNSkiIGZpbGw9IiMwNzA3MDciIHN0cm9rZT0icmdiYSgwLDAsMCwwKSIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjwvc3ZnPgo=");
+  background-color: black;
+  display: block;
+  width: 30px;
+  height: 34px;
+  background-repeat: no-repeat;
 }
 
 .modal__buttons {
@@ -733,6 +739,7 @@ body {
   .tab__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     width: 100%;
     align-items: center;
@@ -742,17 +749,22 @@ body {
     height: 5px;
     width: 100%;
   }
-  .modal__suit {
+  .line__white {
+    background-color: white;
+    height: 5px;
+    width: 100%;
+  }
+  /* .modal__suit {
     transform: translateY(-32px);
     flex-grow: 1;
   }
   .modal__heart {
     flex-grow: 1;
-  }
+  } */
   .mobile__modalButtons {
     display: flex;
     gap: 20px;
-    transform: translateY(-60px);
+    transform: translateY(-20px);
   }
 }
 
