@@ -560,7 +560,9 @@ body {
 }
 .modal__cardsRow {
   /* background-color: black; */
+  max-width: 1000px;
   display: flex;
+  justify-content: center;
   gap: 10px;
   transform: translateY(-80%);
   width: 95%;
@@ -570,6 +572,7 @@ body {
 .poker__modalCard {
   height: 81px;
   width: 59px;
+  max-width: 59px;
   border: 1px solid #474747;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
@@ -592,6 +595,7 @@ body {
 }
 
 .cardRows__wrapper {
+  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -667,5 +671,115 @@ body {
 .reset__btn::before {
   background-color: black;
 }
+.mobile__wrapper {
+  display: none;
+}
 
 /*  Responsiveness modal */
+@media (max-width: 1024px) {
+  .modal {
+    max-width: 500px;
+    width: 100%;
+    margin-inline: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .modal__btn {
+    width: 100%;
+  }
+  .cardRows__wrapper {
+    display: none;
+  }
+  .mobile__wrapper {
+    display: flex;
+    flex-direction: column;
+    /* gap: 40px; */
+    width: 100%;
+  }
+  .mobile__cardTabsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-inline: auto;
+    transform: translateY(-15%);
+    align-items: center;
+  }
+  .mobile__cardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .mobile__modalRow {
+    display: flex;
+    gap: 10px;
+  }
+  .mobile__modalRow--3 {
+    max-width: 70%;
+    margin-inline: auto;
+  }
+  .mobile__modalRow--4 {
+    max-width: 50%;
+    margin-inline: auto;
+  }
+  .modal__tabs {
+    display: flex;
+    gap: 10px;
+    border-top: 2px solid #434343;
+
+    width: 100%;
+  }
+  .tab__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+  }
+  .line {
+    background-color: #070707;
+    height: 5px;
+    width: 100%;
+  }
+  .modal__suit {
+    transform: translateY(-32px);
+    flex-grow: 1;
+  }
+  .modal__heart {
+    flex-grow: 1;
+  }
+  .mobile__modalButtons {
+    display: flex;
+    gap: 20px;
+    transform: translateY(-60px);
+  }
+}
+
+@media (max-width: 435px) {
+  .poker__modalCard {
+    width: 48px;
+    max-width: 50px;
+  }
+  .modal__tabs {
+    max-width: 300px;
+    width: 110%;
+  }
+  .mobile__modalButtons {
+    gap: 10px;
+    max-width: 300px;
+    width: 110%;
+  }
+  .modal__btn {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+@media (max-width: 320px) {
+  .modal__tabs {
+    width: 100%;
+  }
+  .mobile__modalButtons {
+    width: 100%;
+  }
+}
