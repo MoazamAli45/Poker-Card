@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poker Card</title>
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
@@ -15,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
       crossorigin="anonymous"
     />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -26,7 +28,7 @@
               <div class="oval__cardContainer">
                 <h3>PLAYER 5</h3>
                 <div class="oval__cardGroup">
-                  <div class="oval__card">
+                  <div class="oval__card" onclick="openModal('PLAYER 5')">
                     <i class="ri-add-circle-line plus-icon"></i>
                   </div>
                   <div class="oval__card">
@@ -207,6 +209,34 @@
                   <p>Win:-%</p>
                   <p>Tie:-%</p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <!--    MODAL Open -->
+          <div class="overlay" id="overlay"></div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">
+                <!-- &times; -->
+                <i class="ri-close-line"></i>
+              </span>
+              <div id="cardNumber" class="content">
+                <div class="modal__group">
+                  <h3 class="modal__cardHeading" id="card-heading"></h3>
+                  <div class="modal__cardGroup">
+                    <div class="card__modal">
+                      <div class="oval__card">
+                        <i class="ri-add-circle-line plus-icon"></i>
+                      </div>
+                    </div>
+                    <div class="card__modal">
+                      <div class="oval__card">
+                        <i class="ri-add-circle-line plus-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal__cardsRow"></div>
               </div>
             </div>
           </div>
